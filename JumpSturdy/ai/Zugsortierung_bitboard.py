@@ -31,8 +31,8 @@ def order_moves(moves, board, color):
             else:
                 remaining_moves.append(move)
 
-        three_tower = random.sample(tower_moves, min(3, len(tower_moves)))
-        three_remaining = random.sample(remaining_moves, min(3, len(remaining_moves)))
+        three_tower = random.sample(tower_moves, min(5, len(tower_moves)))
+        three_remaining = random.sample(remaining_moves, min(5, len(remaining_moves)))
 
         ordered_moves = three_tower + three_remaining
         return ordered_moves
