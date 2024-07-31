@@ -8,7 +8,7 @@ from ai.Bewertungsfunktion_array import evaluate_position
 from ai.Minimax_array import minimax, minimax2, minimax3, minimax4, minimax_zugsortierung, minimax_pvs, minimax_pvs_ruhesuche
 
 #FEN String ... (convert)
-#FEN = convert_fen_to_board('bb4bb/3b02b01/r07/2r02r02/4b03/2b02r02/2r01r01r0r0/1r01r02 r')
+
 
 #Time measured for generate moves
 def timed_measurement_generate_moves(board, color, maxP , iterations):
@@ -96,7 +96,6 @@ def timed_measurement_pvs_ruhesuche(board, move, depth, alpha, beta, maxP, color
     return (duration, x[1], x[2])
 
 #Run function
-#alphabeta_zugsortierung_pvs = timed_measurement_pvs(Mittelstellung,'', 3, float('-inf'), float('inf'), True, 'red', 200,  0, 20, 1)
 
 
 
